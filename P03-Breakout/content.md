@@ -32,6 +32,30 @@ if(Input.GetKey(KeyCode.Space))
 
 Notice how we set the isKinematic to false, then tell the ball to look at the paddle then add the force of the ball going forward \* 5f. When you multiply a vector by a single number it lengthens the magnitude of the vector or scales it to be longer. When we are applying force, a higher magnitude means it will go further with more force. So we are taking forward which is just a direction, then adding 5 magnitude to it.
 
-As an exercise we would like you to replace the 5f with a public
-variable you can change from the editor within Unity. Then experiment
-with different ball launch strengths to see how the game is impacted.
+tl;dr we do some math to make the ball go to the paddle with a force of power 5.
+
+But that 5 was hard-coded.  When you're coding a big project, it's generally not great practice to hard-code values that have been chosen arbitrarily, like this 5. Really, it'd be much better if it were a variable.
+
+In Unity, you can do even better by making it a public variable.
+
+>[action]
+>Add the following under "public GameObject ball;":
+>
+>```
+>public float ballForceMagnitude;
+>```
+>
+>and change the line:
+>
+>```
+>ballBody.AddForce(ball.transform.forward.normalized * ballForceMagnitude, >ForceMode.VelocityChange);
+>```
+
+Now when you select Paddle in the Editor and look at the Inspector, you should see a Ball Force Power field in the Editor.
+
+![A public variable displaying in the Unity Editor](assets/public_var.png)
+
+>[action]
+>Experiment with different ball launch strengths to see how the game is impacted. You can even do this while the game is playing! It'll just go back to the original value when you stop the game.
+
+![Experiment with the ball speed](assets/public_var_speed.gif)
