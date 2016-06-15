@@ -1,3 +1,8 @@
+---
+title: "Death Zone"
+slug: death-zone
+---
+
 Now we understand how the board is built, let’s look at how the block
 and deathZone work:
 

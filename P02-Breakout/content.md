@@ -1,6 +1,6 @@
 ---
 title: "Fixing the Paddle"
-slug: breakout
+slug: fixing-the-paddle
 ---
 
 Now if you push Play button up top you can play the finished game in the Scene you just made!

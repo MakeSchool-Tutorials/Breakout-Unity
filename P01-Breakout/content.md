@@ -1,6 +1,6 @@
 ---
 title: "Setting the Scene"
-slug: breakout
+slug: setting-the-scene
 ---
 
 >[action]

@@ -1,3 +1,8 @@
+---
+title: "Challenges"
+slug: challenges
+---
+
 That’s it! Now you know how to make breakout
 
 **Challenges**

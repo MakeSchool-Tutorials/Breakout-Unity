@@ -1,6 +1,6 @@
 ---
 title: "Getting Started With Breakout in Unity"
-slug: breakout
+slug: getting-started-with-breakout-in-unity
 ---
 
 We're going to make a clone of the popular 80s game, “Breakout”. If you're unfamiliar with it, it looks like [this](https://www.youtube.com/watch?v=Up-a5x3coC0).

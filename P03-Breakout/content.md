@@ -1,6 +1,6 @@
 ---
 title: "Making the Ball Speed Public"
-slug: breakout
+slug: making-the-ball-speed-public
 ---
 
 Now let's look more specifically at how this game works.

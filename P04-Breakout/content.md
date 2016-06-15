@@ -1,3 +1,8 @@
+---
+title: "Generating the Board"
+slug: generating-the-board
+---
+
 Now let’s look at the GameBoardGenerator.cs script. This script is
 attached to the Game Board.
 
