@@ -14,3 +14,4 @@ Now that you've gone on a tour of Breakout, you should better understand how the
 3.  Add some code to allow a victory condition if all of the bricks are destroyed
 
 4.  Add some code to reset the game and all the bricks
+5.  Remove the GameBoardGenerator.cs script from the GameBoardGenerator prefab, and attach the GameBoardGeneratorUnfinished.cs script to the GameBoardGenerator prefab and implement the TODO section to write the board loop yourself.

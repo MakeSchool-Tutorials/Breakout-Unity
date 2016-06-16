@@ -54,8 +54,7 @@ This code sets the positions and sizes of the objects we just made by setting pr
 
 The transform of a Game Object is a component it has that determines where it is, how big it is, and how its oriented.
 
-Now try to write the loop to position the board yourself, if you can't figure it out then just click the solution link below.
-
+at the end of the project you can have the option of building the board construction loop yourself, if you want to see the solution click the link below.
 >[solution]
 >```
 >		for(int i = 0; i <= boardWidth; i++)
