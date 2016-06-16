@@ -11,7 +11,7 @@ Now if you push Play button up top you can play the finished game in the Scene y
 
 Press space to launch the ball, and use the arrow keys to move the paddle.
 
-You may notice the paddle is too fast and moves backwards.
+You may notice the paddle is too fast, moves backwards, and goes through the walls! We'll show you how to slow down the paddle and make it move the correct direction. We'll leave the wall problem as an exercise for you at the end of this tutorial ;)
 
 >[action]
 >Slow down the Paddle by selecting it and changing the Move Speed value in it's Paddle Controller component to 10.

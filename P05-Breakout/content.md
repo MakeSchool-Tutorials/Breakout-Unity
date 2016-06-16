@@ -3,13 +3,21 @@ title: "Death Zone"
 slug: death-zone
 ---
 
-Now we understand how the board is built, let’s look at how the block
-and deathZone work:
+Tags are responsible for making a ball that hits our walls die.
 
-The Deathzone is the spot below the paddle, so if you miss the ball you
-die.
+Tags in Unity are a nice way to "mark" an object with a piece of information so you can examine it later to make decisions, and you can see them at the top of the Inspector.
 
-In DeathZone.cs you will find this method:
+![The Ball tag](assets/image10.jpg)
+
+We are going to use the Ball tag to detect collisions. The ball is
+already tagged "Ball" even though it says "Undefined." This discrepancy comes about because the Ball comes from an imported package, and the list of tags in our game is part of the settings of our project. When you actually run the game, the correct tag will appear.
+
+The Deathzone is the spot below the paddle, so if you miss the ball you die. It's the thing that checks for the "Ball" tag.
+
+>[action]
+>Open up Deathzone, which you'll find in the Scripts folder.
+
+In it, you will find this method.  We've added comments to explain it.
 
 ```
 public void OnCollisionEnter(Collision collisionWith)
@@ -24,9 +32,11 @@ public void OnCollisionEnter(Collision collisionWith)
 	}
 ```
 
-Every block has Block.cs attached to it.
+Every block has a Block component attached to it, which makes an explosion happen when the ball hits one.
 
-Block.cs has some similar code:
+>[action]
+>Open Block, which is also located in the Scripts folder.
+
 ```
 //Destroy a block when the ball hits it, and make a nice shiny explosion
 effect.

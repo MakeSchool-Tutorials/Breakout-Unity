@@ -3,7 +3,7 @@ title: "Challenges"
 slug: challenges
 ---
 
-That’s it! Now you know how to make breakout
+Now that you've gone on a tour of Breakout, you should better understand how the game was made. If you're feeling adventurous, here are some challenges.
 
 **Challenges**
 
