@@ -9,7 +9,11 @@ slug: setting-the-scene
 ![Create a new 3D Unity project](assets/set_up.png)
 
 >[action]
->First things first, import the Breakout Package.
+>First things first, import the Breakout Package, which you can get via:
+>
+```
+git clone https://MakeSchool-Tutorials@bitbucket.org/MakeSchool-Tutorials/breakout-unity.git
+```
 
 ![Import the Breakout Package](assets/image09.png)
 
@@ -37,6 +41,11 @@ In order to make our files a little easier to see, by the way, we've reduced the
 ![Drag the slider at the bottom of the Project Panel to reduce icon size](assets/reduce_icon_size.gif)
 
 ![Drag the Ball, Board, and Paddle Prefabs into the Hierarchy Panel](assets/drag_ballboardpaddle.gif)
+
+>[info]
+>Dragging objects from the Project Panel into the Hierarchy Panel or the Scene View adds those objects to the Scene. Dragging into the Hierarchy Panel allows you to drag multiple and sets their positions to the defaults for you, whereas dragging into the Scene View only allows you to drag one, but allows you to position it visually when you drop it in.
+
+<!-- -->
 
 >[action]
 >Now select the Paddle in the Hierarchy Panel and drag the Ball in the Hierarchy Panel into the Ball slot (under Paddle Controller in the Inspector on the right).
