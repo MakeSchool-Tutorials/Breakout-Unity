@@ -1,13 +1,13 @@
 ---
-title: "Getting Started With Breakout in Unity"
-slug: getting-started-with-breakout-in-unity
+title: "Getting Started With Outbreak in Unity"
+slug: getting-started-with-outbreak-in-unity
 ---
 
 We're going to make a clone of the popular 80s game, “Breakout”. If you're unfamiliar with it, it looks like [this](https://www.youtube.com/watch?v=Up-a5x3coC0).
 
 Our game will look like this!
 
-![Our final game of Breakout](assets/final.gif)
+![Our final game of Outbreak](assets/final.gif)
 
 We're going to make it with Unity, without even writing any code.  We'll only have to change a little code in some places.
 

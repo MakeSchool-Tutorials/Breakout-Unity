@@ -54,22 +54,24 @@ This code sets the positions and sizes of the objects we just made by setting pr
 
 The transform of a Game Object is a component it has that determines where it is, how big it is, and how its oriented.
 
-```
-		for(int i = 0; i <= boardWidth; i++)
-		{
-			for(int j = 0; j <= boardHeight; j++)
-			{
-				GameObject newBlock = Instantiate(block) as GameObject;
-				newBlock.transform.parent = this.transform;
-				newBlock.transform.localPosition = new Vector3((float)i, (float)j, 0f);
-			}
-		}
-	}
-```
-
-To make our actual board, we've used two loops, one for rows and one for columns.  We used a scale of 1 so it makes everything very easy, we just create each block and set it’s localPosition to the value of i,j;
-
-If you use localPosition it will be the position relative to the objects parent, if you use position it will be position in world space.
+at the end of the project you can have the option of building the board construction loop yourself, if you want to see the solution click the link below.
+>[solution]
+>```
+>		for(int i = 0; i <= boardWidth; i++)
+>		{
+>			for(int j = 0; j <= boardHeight; j++)
+>			{
+>				GameObject newBlock = Instantiate(block) as GameObject;
+>				newBlock.transform.parent = this.transform;
+>				newBlock.transform.localPosition = new Vector3((float)i, (float)j, 0f);
+>			}
+>		}
+>	}
+>```
+>
+>To make our actual board, we've used two loops, one for rows and one for columns.  We used a scale of 1 so it makes everything very easy, we just create each block and set it’s localPosition to the value of i,j;
+>
+>If you use localPosition it will be the position relative to the objects parent, if you use position it will be position in world space.
 
 If you're wondering where boardWidth and boardHeight come from, they're public variables on Board.
 
