@@ -21,15 +21,15 @@ In it, you will find this method.  We've added comments to explain it.
 
 ```
 public void OnCollisionEnter(Collision collisionWith)
+{
+	//if anything collides with this object that has this script let's check if it has the ball tag?
+	if(collisionWith.gameObject.tag == "Ball")
 	{
-		//if anything collides with this object that has this script let’s check if it has the ball tag?
-		if(collisionWith.gameObject.tag == "Ball")
-		{
-			//oh it does, so we are going to reset the ball back to kinematic, this snaps it back to the paddle.
-			Rigidbody ballBody = collisionWith.gameObject.GetComponent<Rigidbody>();
-			ballBody.isKinematic = true;
-		}
+		//oh it does, so we are going to reset the ball back to kinematic, this snaps it back to the paddle.
+		Rigidbody ballBody = collisionWith.gameObject.GetComponent<Rigidbody>();
+		ballBody.isKinematic = true;
 	}
+}
 ```
 
 Every block has a Block component attached to it, which makes an explosion happen when the ball hits one.
@@ -38,20 +38,17 @@ Every block has a Block component attached to it, which makes an explosion happe
 >Open Block, which is also located in the Scripts folder.
 
 ```
-//Destroy a block when the ball hits it, and make a nice shiny explosion
-effect.
-
 //Destroy a block when the ball hits it, and make a nice shiny explosion effect.
-	public void OnCollisionEnter(Collision collisionWith)
+public void OnCollisionEnter(Collision collisionWith)
+{
+	//if anything collides with this block let's see if it has the ball tag?
+	if(collisionWith.gameObject.tag == "Ball")
 	{
-		//if anything collides with this block lets see if it has the ball tag?
-		if(collisionWith.gameObject.tag == "Ball")
-		{
-			//This Destroy method destroys an explosion 0.5 seconds after it is created with Instantiate
-			Destroy((GameObject)Instantiate(explosionEffect, collisionWith.gameObject.transform.position, collisionWith.gameObject.transform.rotation), 0.5f);
+		//This Destroy method destroys an explosion 0.5 seconds after it is created with Instantiate
+		Destroy((GameObject)Instantiate(explosionEffect, collisionWith.gameObject.transform.position, collisionWith.gameObject.transform.rotation), 0.5f);
 
-			//This destroy destroys the block.
-			Destroy(this.gameObject);
-		}
+		//This destroy destroys the block.
+		Destroy(this.gameObject);
 	}
+}
 ```
