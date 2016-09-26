@@ -7,10 +7,14 @@ Tags are responsible for making a ball that hits our walls die.
 
 Tags in Unity are a nice way to "mark" an object with a piece of information so you can examine it later to make decisions, and you can see them at the top of the Inspector.
 
-![The Ball tag](assets/image10.jpg)
+![The Ball tag](assets/Capture2.png)
 
-We are going to use the Ball tag to detect collisions. The ball is
-already tagged "Ball" even though it says "Undefined." This discrepancy comes about because the Ball comes from an imported package, and the list of tags in our game is part of the settings of our project. When you actually run the game, the correct tag will appear.
+We are going to use the Ball tag to detect collisions. The ball is already tagged "Ball" even though it says "Undefined." This discrepancy comes about because the Ball comes from an imported package, and the list of tags in our game is part of the settings of our project. When you actually run the game, the correct tag will appear, but let's fix this in a better way.
+
+>[action]
+>Select the dropdown next to "Tag," select "Add Tag", click the "+" and add the text "Ball," and then select the object and set the tag by selecting the newly added "Ball" from the dropdown menu with the Ball object selected.
+
+![Changing Tags](assets/Animation1.gif)
 
 The Deathzone is the spot below the paddle, so if you miss the ball you die. It's the thing that checks for the "Ball" tag.
 

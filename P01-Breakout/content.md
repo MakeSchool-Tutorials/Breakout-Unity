@@ -59,7 +59,7 @@ We now want to position our Board and Paddle.
 >[action]
 >Click to select the Board in the Hierarchy and then set its position in the Inspector to (0,0,0).  Then set the Paddle to position (0,-2,0).
 
-![Set the Board and Paddle positions](assets/image03.jpg)
+![Set the Board and Paddle positions](assets/Capture1.png)
 
 You may have noticed that the Paddle is pink, this is because it has no Material. Materials give objects color, and pink is the color Unity assigns if no color is defined.
 

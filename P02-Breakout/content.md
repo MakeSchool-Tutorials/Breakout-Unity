@@ -16,7 +16,7 @@ You may notice the paddle is too fast, moves backwards, and goes through the wal
 >[action]
 >Slow down the Paddle by selecting it and changing the Move Speed value in it's Paddle Controller component to 10.
 
-![Set the Paddle Controller's Move Speed to 10](assets/image04.jpg)
+![Set the Paddle Controller's Move Speed to 10](assets/Capture1.png)
 
 Now when you run the Scene, the Paddle should move more slowly, though it still moves backwards.
 
