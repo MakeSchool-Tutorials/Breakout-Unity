@@ -13,7 +13,7 @@ Press space to launch the ball, and use the arrow keys to move the paddle.
 
 You may notice the paddle is too fast, moves backwards, and goes through the walls! We'll show you how to slow down the paddle and make it move the correct direction. We'll leave the wall problem as an exercise for you at the end of this tutorial ;)
 
->[action]
+> [action]
 >Slow down the Paddle by selecting it and changing the Move Speed value in it's Paddle Controller component to 10.
 
 ![Set the Paddle Controller's Move Speed to 10](assets/Capture1.png)
@@ -24,10 +24,10 @@ Now when you run the Scene, the Paddle should move more slowly, though it still 
 
 In order to fix the Paddle's movement, we'll want to look at the Paddle Controller component.
 
->[action]
->Open the folder Scripts and double-click PaddleController to open it up in Visual Studios.
+> [action]
+>Open the folder Scripts and double-click PaddleController to open it up in Visual Studio.
 
-![Navigate to and open the PaddleController component in Visual Studios](assets/open_script.png)
+![Navigate to and open the PaddleController component in Visual Studio](assets/open_script.png)
 
 Your job is to make the paddle move the correct direction (left when you press the Left Arrow Key and right when you press the Right Arrow Key).
 
@@ -47,12 +47,12 @@ if(Input.GetKey(KeyCode.RightArrow))
 
 Specifically, Input.GetKey(KeyCode.LeftArrow) checks whether or not the Left Arrow Key is held down and Input.GetKey(KeyCode.RightArrow) checks whether or not the Right Arrow Key is held down.
 
->[action]
+> [action]
 >Change the code so that the Left Arrow Key moves the paddle left and the Right Arrow Key moves the paddle right. Be sure to run the Scene to make sure your solution worked!
 
 <!-- -->
 
->[solution]
+> [solution]
 >
 >We fixed this by switching RightArrow with LeftArrow:
 >

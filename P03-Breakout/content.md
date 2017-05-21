@@ -11,7 +11,7 @@ Our ball moves through space using physics, stuff that bumps into it will affect
 
 Objects that do not move but are still part of the physics simulation (like a wall or a floor) are marked as **Is Kinematic**. Is Kinematic is used for the paddle, and boundary walls. The Paddle does move, but physics does not move it, we move it manually by setting its position in space rather than relying on the physics engine.
 
-“But wait!” you ask…Why is the ball Kinematic too? Doesn’t it need
+`But wait!` you ask…Why is the ball Kinematic too? Doesn’t it need
 physics? Good observation, it does, but before we launch the ball it
 starts as Kinematic, when we press the spacebar it removes the
 isKinematic flag.
@@ -21,12 +21,12 @@ The code is in the Update method of PaddleController:
 ```
 if(Input.GetKey(KeyCode.Space))
 {
-	if(ballBody.isKinematic)
-	{
-		ballBody.isKinematic = false;
-		ball.transform.LookAt(this.gameObject.transform);
-		ballBody.AddForce(ball.transform.forward.normalized * 5f, ForceMode.VelocityChange);
-	}
+  if(ballBody.isKinematic)
+  {
+    ballBody.isKinematic = false;
+    ball.transform.LookAt(this.gameObject.transform);
+    ballBody.AddForce(ball.transform.forward.normalized * 5f, ForceMode.VelocityChange);
+  }
 }
 ```
 
@@ -34,11 +34,11 @@ Notice how we set the isKinematic to false, then tell the ball to look at the pa
 
 tl;dr we do some math to make the ball go to the paddle with a force of power 5.
 
-But that 5 was hard-coded.  When you're coding a big project, it's generally not great practice to hard-code values that have been chosen arbitrarily, like this 5. Really, it'd be much better if it were a variable.
+But that 5 was hard-coded. When you're coding a big project, it's generally not great practice to hard-code values that have been chosen arbitrarily, like this 5. Really, it'd be much better if it were a variable.
 
 In Unity, you can do even better by making it a public variable.
 
->[action]
+> [action]
 >Add the following under "public GameObject ball;":
 >
 >```
@@ -55,7 +55,7 @@ Now when you select Paddle in the Editor and look at the Inspector, you should s
 
 ![A public variable displaying in the Unity Editor](assets/public_var.png)
 
->[action]
+> [action]
 >Experiment with different ball launch strengths to see how the game is impacted. You can even do this while the game is playing! It'll just go back to the original value when you stop the game.
 
 ![Experiment with the ball speed](assets/public_var_speed.gif)
