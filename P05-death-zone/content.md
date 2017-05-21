@@ -13,7 +13,7 @@ We are going to use the Ball tag to detect collisions. The ball is already tagge
 
 > [action]
 >
-Select the dropdown next to "Tag," select "Add Tag", click the "+" and add the text "Ball," and then select the object and set the tag by selecting the newly added "Ball" from the dropdown menu with the Ball object selected.
+Select the dropdown next to `Tag`, select `Add Tag`, click the `+` and add the text `Ball`, and then select the object and set the tag by selecting the newly added `Ball` from the dropdown menu with the Ball object selected.
 >
 ![Changing Tags](assets/Animation1.gif)
 
