@@ -12,7 +12,8 @@ To get started, make an empty 3D project and call it Breakout.
 Import the Breakout Package, which you can get via:
 >
 ```
-git clone https://MakeSchool-Tutorials@bitbucket.org/MakeSchool-Tutorials/breakout-unity.git
+cd Desktop
+git clone https://github.com/MakeSchool-Tutorials/Breakout-Unity-Starter.git
 ```
 >
 ![Import the Breakout Package](assets/image09.png)
